@@ -1,0 +1,20 @@
+<app-home></app-home>
+
+
+<h2>Reservation List</h2>
+<ul *ngIf="reservations.length;else noReservation">
+    <li *ngFor="let reservation of reservations" >
+        Guest           : {{reservation.guestName}} <br>
+        checkInDate     : {{reservation.checkInDate}} <br>
+        checkOutDate    : {{reservation.checkOutDate}} <br>
+        guestEmail      : {{reservation.guestEmail}} <br>
+        roomNumber      : {{reservation.roomNumber}} <br>
+        <button (click)="deleteReservation(reservation.id)">Delete</button>
+        <button [routerLink]="['/edit',reservation.id]">Update</button>
+    </li>
+    
+</ul>
+
+<ng-template #noReservation>
+    <p>No reservations</p>
+</ng-template>

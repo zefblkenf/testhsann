@@ -1,0 +1,15 @@
+- Building...
+
+Initial chunk files | Names         | Raw size
+polyfills.js        | polyfills     | 86.27 kB | 
+main.js             | main          |  7.32 kB | 
+styles.css          | styles        | 95 bytes | 
+
+                    | Initial total | 93.69 kB
+
+Application bundle generation complete. [2.779 seconds]
+
+Watch mode enabled. Watching for file changes...
+Re-optimizing dependencies because vite config has changed
+  ➜  Local:   http://localhost:4200/
+  ➜  press h + enter to show help
